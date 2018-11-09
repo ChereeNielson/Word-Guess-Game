@@ -1,3 +1,5 @@
+// Global variables
+// =============================================================================
 // Create an array of words
 const word = ["Braveheart", "Fight Club", "Inception", "Snatch"];
 
@@ -7,9 +9,15 @@ let chosenWord = word[randomNumber];
 let correctWord = [];
 let wrongWord = [];
 let underScore = [];
+let alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-// Testing
-console.log(chosenWord);
+// DOM manipulation
+let wordUnderScore = document.getElementsByClassName("underscore");
+let wordCorrectGuess = document.getElementsByClassName("correctGuess");
+let wordWrongGuess = document.getElementsByClassName("wrongGuess");
+
+// Main 
+// =============================================================================
 
 // Create underscores based on length of word
 let generateUnderscore = () => {
@@ -23,23 +31,32 @@ console.log(generateUnderscore());
 // Get users guess
 document.addEventListener("keypress", (event) => {
     let keyword = String.fromCharCode(event.keyCode);
-    
-// If users guess is correct
-    if (chosenWord.indexOf(keyword) > -1) {
-    // Add to correctWord array
-        correctWord.push(keyword);
-        // Replace underscore with correct letter
-        underScore[chosenWord.indexOf(keyword)] = keyword;
-        console.log(correctWord);
+    console.log(alphabet);
+    // If users guess is correct
+    if (alphabet.indexOf(keyword) > -1) {
+        
+        if (chosenWord.indexOf(keyword) > -1) {
+            // Add to correctWord array
+            console.log("test");
+            correctWord.push(keyword);
+            // Replace underscore with correct letter
+            underScore[chosenWord.indexOf(keyword)] = keyword;
+            wordUnderScore[0].innerHTML = underScore.join(" ");
+            wordCorrectGuess[0].innerHTML = correctWord;
+            // Check to see if user word matches guess
+            if (underScore.join("") == chosenWord) {
+                alert("You Win!");
+            }
+        }
+        else {
+            wrongWord.push(keyword);
+            wordWrongGuess[0].innerHTML = wrongWord;
+        }
     }
-    else {
-        (wrongWord.push(keyword);
-        console.log(wrongWord);
-    }
-    });
-// 
-    if ()
-// Check if guess is correct
-// If correct then push to correct array
-// If wrong then push to wrong array
-// 
+    // wordUnderScore = document.getElementsByClassName("underscore").innerHTML;
+    // wordCorrectGuess = document.getElementsByClassName("correctGuess").innerHTML;
+    // wordWrongGuess = document.getElementsByClassName("wrongGuess").innerHTML;
+});
+
+
+underScore[0].innerHTML = generateUnderscore().join(" ");

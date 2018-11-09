@@ -48,7 +48,7 @@ h3 {
     height: 150px;
     width: 80%; 
 }
-
+/* change the name of correctGuess */
 .correctGuess {
     border: 3px solid black;
     font-size: 20px;
@@ -57,7 +57,7 @@ h3 {
     height: 150px;
     width: 80%; 
 }
-
+/* change the name of wrongGuess */
 .wrongGuess {
     border: 3px solid black;
     font-size: 20px;
@@ -66,3 +66,4 @@ h3 {
     height: 150px;
     width: 80%; 
 }
+/* make the divs into a new class */
