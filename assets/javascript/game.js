@@ -57,4 +57,4 @@ document.addEventListener("keypress", (event) => {
 });
 
 
-underScore[0].innerHTML = underScore.join(" ");
+wordUnderScore[0].innerHTML = underScore.join(" ");
