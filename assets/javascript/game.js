@@ -1,11 +1,12 @@
 // Global variables
 // =============================================================================
 // Create an array of words
-const word = ["Braveheart", "Fight Club", "Inception", "Snatch"];
+const word = ["braveheart", "fight club", "inception", "snatch"];
 
 // Choose a word randomly 
 let randomNumber = Math.floor(Math.random() * word.length);
 let chosenWord = word[randomNumber];
+console.log(chosenWord);
 let correctWord = [];
 let wrongWord = [];
 let underScore = [];
@@ -20,17 +21,14 @@ let wordWrongGuess = document.getElementsByClassName("wrongGuess");
 // =============================================================================
 
 // Create underscores based on length of word
-let generateUnderscore = () => {
     for (let i = 0; i < chosenWord.length; i++) {
         underScore.push("_");
-    }
-    return underScore;
-}
-console.log(generateUnderscore());
+        }
+    
 
 // Get users guess
 document.addEventListener("keypress", (event) => {
-    let keyword = String.fromCharCode(event.keyCode);
+    let keyword = String.fromCharCode(event.keyCode).toLowerCase();
     console.log(alphabet);
     // If users guess is correct
     if (alphabet.indexOf(keyword) > -1) {
@@ -59,4 +57,4 @@ document.addEventListener("keypress", (event) => {
 });
 
 
-underScore[0].innerHTML = generateUnderscore().join(" ");
+underScore[0].innerHTML = underScore.join(" ");
