@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,12 @@
     <!--Reset-->
     <link rel="stylesheet" href="assets/css/reset.css">
     <!--CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Warnes">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arima Madurai">
 </head>
 
 <body>
@@ -22,11 +24,32 @@
             <h1>Hangman Game</h1>
             <h2>Movies</h2>
         </header>
-        <div class="underscore"></div>
-        <div>Correct Guess<h3 class="correctGuess"></h3></div>
-        <div>Wrong Guess<h3 class="wrongGuess"></h3></div>
+
+        <p>Press any key to begin</p>
+        <div class="underscore" id="div1"></div>
+        
+        <p>Letters guessed correctly</p>
+        <div class="correctGuess" id="div2">
+            <h3>Correct Guess</h3>
+        </div>
+        
+        <p>Letters guessed incorrectly</p>
+        <div class="wrongGuess" id="div3">
+            <h3>Wrong Guess</h3>
+        </div>
+        
+        <div class="wins" id="div4">
+            <h4>Number of Wins</h4>
+            <p id="wins"></p>
+        </div>
+        
+        <div class="losses" id="div5">
+            <h4>Number of Losses</h4>
+            <p id="losses"></p>
+        </div>
     </div>
 
-<script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>

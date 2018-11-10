@@ -1,12 +1,12 @@
-.container {
-    
+html {
+    background-color: #d5e1df;
 }
 
 header {
     border: 3px solid black;
     font-size: 20px;
     text-align: center;
-    margin: 15px auto;
+    margin: 35px auto;
     height: 300px;
     width: 80%;
     display: block;
@@ -15,8 +15,9 @@ header {
 
 header::after {
     content: "";
-    background-image: url("../images/movie-reel.jpg");
-    opacity: 0.5;
+    background-image: url("../images/camera.jpg");
+    background-size: cover;
+    opacity: 0.6;
     top: 0;
     left: 0;
     bottom: 0;
@@ -25,45 +26,101 @@ header::after {
     z-index: -1;
 }
 
+p {
+    font-family: Arima Madurai;
+    font-size: 20px;
+    text-align: center;
+
+}
+
 h1 {
     font-family: Warnes;
-    font-size: 50px;
+    font-size: 100px;
+    text-align: center;
+    padding: 1%;
 }
 
 h2 {
     font-family: Aclonica;
-    font-size: 50px;
+    font-size: 80px;
+    text-align: center;
+    padding: 3%;
 }
 
 h3 {
     font-family: Aclonica;
     font-size: 40px;
+    padding: 20px;
 }
 
-.underscore {
+h4 {
+    font-family: Aclonica;
+    font-size: 30px;
+    padding: 15px;
+}
+
+#div1 {
     border: 3px solid black;
+    background-color: white;
     font-size: 100px;
     text-align: center;
-    margin: 50px auto;
-    height: 150px;
-    width: 80%; 
+    padding: 20px;
+    margin: 20px auto;
+    height: 120px;
+    width: 50%; 
 }
-/* change the name of correctGuess */
-.correctGuess {
+
+#div1::after {
+    content: "";
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;    
+}
+
+#div2 {
     border: 3px solid black;
+    background-color: white;
     font-size: 20px;
     text-align: center;
-    margin: 50px auto;
-    height: 150px;
-    width: 80%; 
+    margin: 20px auto;
+    height: 100px;
+    width: 30%; 
 }
-/* change the name of wrongGuess */
-.wrongGuess {
+
+#div3 {
     border: 3px solid black;
+    background-color: white;
     font-size: 20px;
     text-align: center;
-    margin: 50px auto;
-    height: 150px;
-    width: 80%; 
+    margin: 20px auto;
+    height: 100px;
+    width: 30%; 
 }
-/* make the divs into a new class */
+
+#div4 {
+    border: 3px solid black;
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px auto;
+    height: 100px;
+    width: 20%; 
+    float: left;
+    margin-left: 20%;
+}
+
+#div5 {
+    border: 3px solid black;
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px auto;
+    height: 100px;
+    width: 20%; 
+    float: right;
+    margin-right: 20%;
+}
