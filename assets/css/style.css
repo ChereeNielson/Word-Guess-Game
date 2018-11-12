@@ -1,5 +1,5 @@
 html {
-    background-color: #d5e1df;
+    background-color: #b2b2b2;
 }
 
 header {
@@ -15,7 +15,7 @@ header {
 
 header::after {
     content: "";
-    background-image: url("../images/camera.jpg");
+    background-image: url("../images/blue-film.jpg");
     background-size: cover;
     opacity: 0.6;
     top: 0;
